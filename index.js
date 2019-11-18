@@ -163,5 +163,13 @@ const ISO4217 = {
     "ZMW": "Zambia Kwacha",
     "ZWD": "Zimbabwe Dollar",
   },
-  isCurrencyCode: 
+  isCurrencyCode: function(code) {
+    if(Object.prototype.hasOwnProperty.call(this.codes, code)) {
+      return this.codes[code];
+    } else {
+      throw new Error("Invalid ISO4217 Country Code");
+    }
+  },
 };
+
+module.exports = ISO4217;
