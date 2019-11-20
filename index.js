@@ -164,8 +164,8 @@ const ISO4217 = {
     "ZWD": "Zimbabwe Dollar",
   },
   isCurrencyCode: function(code) {
-    if(Object.prototype.hasOwnProperty.call(this.codes, code)) {
-      return this.codes[code];
+    if(Object.prototype.hasOwnProperty.call(this.codes, code.toUpperCase())) {
+      return this.codes[code.toUpperCase()];
     } else {
       throw new Error("Invalid ISO4217 Country Code");
     }
