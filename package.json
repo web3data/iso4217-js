@@ -1,5 +1,5 @@
 {
-  "name": "iso4217-js",
+  "name": "iso4217",
   "version": "1.0.0",
   "description": "Check valid codes for https://www.xe.com/iso4217.php",
   "main": "index.js",
